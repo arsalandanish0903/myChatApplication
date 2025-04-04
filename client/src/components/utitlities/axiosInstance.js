@@ -6,6 +6,7 @@ export const axiosInstance = axios.create({
   baseURL: DB_URL,
   withCredentials: true,
   headers: {
-    ContentType: "application/json",
-  },
+    "Content-Type": "application/json", // ✅ correct key
+  }
+  
 });

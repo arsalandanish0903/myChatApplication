@@ -8,7 +8,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: [process.env.CLIENT_URL],
+    origin: ["http://localhost:5173", "https://my-chat-application-drab.vercel.app"],
     credentials: true,
   })
 );
